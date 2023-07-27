@@ -39,6 +39,9 @@ public class RoboticDog extends RoboticPet implements Walkable{
         this.isWalked = false;
         this.isCageDirty = false;
     }
+    public RoboticDog(){
+        
+    }
 
     public void timePass(){
         oilLevel -= 2;

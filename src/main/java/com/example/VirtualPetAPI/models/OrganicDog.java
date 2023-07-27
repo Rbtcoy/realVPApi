@@ -30,6 +30,10 @@ public class OrganicDog  extends OrganicPet implements Walkable{
         super(name, description);
         
     }
+
+    public OrganicDog(){
+        
+    }
     
     public void timePass(){
         if(!isWalked){
