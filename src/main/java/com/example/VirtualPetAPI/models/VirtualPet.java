@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 
-import org.springframework.data.annotation.Id;
+import javax.persistence.Id;
 
 
 @Entity

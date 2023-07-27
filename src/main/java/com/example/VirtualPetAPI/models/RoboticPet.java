@@ -23,6 +23,10 @@ public abstract class RoboticPet extends VirtualPet{
         super(name, description);
     }
 
+    public RoboticPet(){
+        
+    }
+
     public void timePass(){
         oilLevel -= 2;
         if(happiness < 7){

@@ -30,5 +30,8 @@ public abstract class OrganicPet extends VirtualPet {
         super(name,description);
     }
     
+    public OrganicPet(){
+
+    }
     
 }
