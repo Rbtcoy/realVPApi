@@ -2,14 +2,20 @@ package com.example.VirtualPetAPI.models;
 
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
+
+import org.springframework.data.annotation.Id;
 
 
 @Entity
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public abstract class VirtualPet {
     
+    @Id
+    @GeneratedValue
+    protected Long id;
     protected int food = 60;
     protected int water = 60;
     protected int play = 60;

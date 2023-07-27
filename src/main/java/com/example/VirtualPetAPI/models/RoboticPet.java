@@ -1,9 +1,15 @@
 package com.example.VirtualPetAPI.models;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 public abstract class RoboticPet extends VirtualPet{
     protected int oilLevel = 30;
     protected int randoTen = (int) ((Math.random() * 10)+1);
 
+    @Id
+    @GeneratedValue
+    protected Long id;
 
     public int getOilLevel(){
         return oilLevel;

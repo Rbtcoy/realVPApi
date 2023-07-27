@@ -1,7 +1,13 @@
 package com.example.VirtualPetAPI.models;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 public abstract class OrganicPet extends VirtualPet {
     
+    @Id
+    @GeneratedValue
+    protected Long id;
 
     public void timePass(){
         food -= randoTwo;
